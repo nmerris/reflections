@@ -1,0 +1,3 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Upon initialization, a hidden folder named .git is created, which contains many subdirectories and files necessary for the git version control system to do its 'thang.  You must initialize the repo or git will not work because it would basically just be like any other folder on your drive.
