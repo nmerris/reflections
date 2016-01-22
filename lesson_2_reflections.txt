@@ -1,3 +1,7 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 Upon initialization, a hidden folder named .git is created, which contains many subdirectories and files necessary for the git version control system to do its 'thang.  You must initialize the repo or git will not work because it would basically just be like any other folder on your drive.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging are is where files are placed that have been changed and are intended to eventually be committed.  You can place as few or as many files as you like in the staging area.  Do this by using "git add" for each file.  When you actually commit the files, they will go from the staging area to the repository, which may or may not be remote.  The working directory is the folder on you local machine that has all the files you are currently working with.  The staging area is useful because you can choose which files you want to commit.
