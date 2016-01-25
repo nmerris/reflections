@@ -18,3 +18,4 @@ How can you use the commands git log and git diff to view the history of files?
 
 Use git log from a UNIX shell, one can view the complete commit history of a project, including: who made the changes, when, and any notes they included.  Use git diff to see the actual changes in two commits, just put the commit ID's of the the two you want to compare after git diff command.
 
+Adding this line to see how git bash represents a changed file in the working directory, expecting an asterisk after 'master'.
