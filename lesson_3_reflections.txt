@@ -1,0 +1,3 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+It's a good idea to have a remote repo for backup reasons, it's another convenient place to backup.  You would also want a remote repo if you are collaborating with other folks.
