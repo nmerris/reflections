@@ -5,3 +5,11 @@ Upon initialization, a hidden folder named .git is created, which contains many 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging are is where files are placed that have been changed and are intended to eventually be committed.  You can place as few or as many files as you like in the staging area.  Do this by using "git add" for each file.  When you actually commit the files, they will go from the staging area to the repository, which may or may not be remote.  The working directory is the folder on you local machine that has all the files you are currently working with.  The staging area is useful because you can choose which files you want to commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+The staging area allows you to add files individually, so you can add only the files that are part of a 'logical change' and then commit them all at once.  They key here is to only include the files that make up a 'logical change'.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+You want to start a new branch if you are trying something experimental that may not even be included with the final product.  If it works out, you can merge your new branch with the master at some point in the future.  Creating branches may make it easier to keep things organized because the entire branch can be thought of as one "logical change" and can be discarded all at once without affecting the rest of the program.
