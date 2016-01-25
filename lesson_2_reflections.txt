@@ -13,3 +13,15 @@ The staging area allows you to add files individually, so you can add only the f
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 You want to start a new branch if you are trying something experimental that may not even be included with the final product.  If it works out, you can merge your new branch with the master at some point in the future.  Creating branches may make it easier to keep things organized because the entire branch can be thought of as one "logical change" and can be discarded all at once without affecting the rest of the program.
+
+How do the diagrams help you visualize the branch structure?
+
+First, I fine "gitk --all" to be much more useful than "git log --graph --online blah blah" because it has a very nice visual graphical representation of the branching tree.  The diagrams are helpful because they allow you to visually understand where you are in the project's structure, so you know what code you are starting with (which would depend on where you branched from), and what other branches in the project will be able to see your changes.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Both branches become the same branch, and the history of both branches is preserved, although the order of the commits are chronological so they may appear in the commit history different than you expect.  The merge process seems a bit mysterious to me, and potentially error prone, but it clearly must be useful if folks use it all the time.  I now understand a bit better why it is important to keep commits logically distinct and small.  The diagram just visually shows which two branches, and at what points, were combined.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros of automatic merging: hopefully will only 'go through' when there is almost no chance of errors in the resultant merged commit, so this will save you time.  Cons are minimal: git will put extra characters in your source files to mark off the parts it is not sure how to combine, so you have to spend some time going in and manually combining the code yourself, but you were going to do that anyway without git merge, so it's not much of a con.  A pro of always manually merging is that you are always in complete control and 'in the loop'.
