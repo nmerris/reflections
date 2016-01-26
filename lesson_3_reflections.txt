@@ -1,3 +1,15 @@
 When would you want to use a remote repository rather than keeping all your work local?
 
 It's a good idea to have a remote repo for backup reasons, it's another convenient place to backup.  You would also want a remote repo if you are collaborating with other folks.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+If other folks are working on the same project, it is possible that something they changed will 'break' your code.. if pulls happened automatically, you might not even know why your code just failed.  That could be confusing and time consuming to correct.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+A fork is a github special clone, you can only use it to 'copy' other folks' repos to your own github account, at which point it is autmatically considered to be a 'remote repository' (because it's on github servers, not your local machine at this point).  Unlike cloning, you can choose to only copy over an individual branch.  You will not be able to modify anything from the original source repo you cloned from, but the history and authorship are preserved.  Cloning a repo means you make an exact copy of another repo, the cloned repo resides on your local machine.  I'm pretty sure there is actually a way to use git clone to only clone a branch, but I believe it's more diffictult and proably has other disadvantages to just using githubs fork.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+One advantage: you might just want a copy of it on your local machine so you can reference it while you work on your own local branch.  If you are going to be somewhere without internet access, this would keeping a local copy of the remote branch could be very useful.  Using git fetch to copy a remote branch to your local repo will automatically create a new branch in your local repo, likely named origin/master.  This new branch will be completely separated from your local master branch.  You can merge them whenever you like.
